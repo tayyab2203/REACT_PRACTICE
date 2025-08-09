@@ -1,0 +1,17 @@
+.UserCard {
+  margin-top: 20px;
+  width: 250px;            /* fixed card width */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* background-color: white; */
+}
+
+.UserCard img {
+  width: 100%;             /* make image fill card width */
+  height: auto;            /* keep proportions */
+  border-radius: 8px;      /* rounded corners */
+}
+

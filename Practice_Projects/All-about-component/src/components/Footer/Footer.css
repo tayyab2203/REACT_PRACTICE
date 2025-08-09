@@ -1,0 +1,8 @@
+.footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid yellow;
+    border-radius: 10px;
+}

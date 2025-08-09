@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+/* ================================================== */
+.user-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;           /* space between cards */
+  justify-content: center;
+  flex-wrap: wrap;     /* allows them to stack on small screens */
+  padding: 20px;
+  /* border: 1px solid; */
+  border-radius: 40px;
+}

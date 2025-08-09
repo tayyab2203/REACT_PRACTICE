@@ -1,34 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import UserCard from './components/UserCard/UserCard.jsx'
+import image from "./assets/test.webp"
+import WelcomeCard from './components/WelcomeCard'
+import Button from './components/Button/Button'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer.jsx'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+   <>
+   <Header title="React Component Practice" subTitle="Learning props and Reusable UI" />
+   <WelcomeCard name="Tayyab" message="Welcome to react component practice"/>
+
+   <div className="user-container">
+   <UserCard image={image} name="Tayyab Sajjad" bio="Frontend Developer, who love React!!!!!" />
+   <UserCard image={image} name="Fazal Abbas" bio="Frontend Developer, who also love React!!!!!" />
+   <UserCard image={image} name="Irfan Khan" bio="Frontend Developer, who love React!!!!!" />
+   </div>
+   <Button label="click Me"/>
+
+   <Footer text="Created By Tayyab -" year={2025}/>
+   </> 
   )
 }
 
