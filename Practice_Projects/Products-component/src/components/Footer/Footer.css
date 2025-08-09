@@ -1,0 +1,9 @@
+.footer-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 5px 0px;
+  background: #348581;
+  color: white;
+}
